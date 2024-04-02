@@ -12,7 +12,7 @@ eksctl create cluster --name=vamsi --region=us-east-1 --version 1.27 --zones=us-
 ## Create & Associate IAM OIDC Provider for our EKS Cluster
 To enable and use AWS IAM roles for Kubernetes service accounts on our EKS cluster, we must create & associate OIDC identity provider.
 
-eksctl utils associate-iam-oidc-provider --region ap-southeast-1 --cluster jawan --approve
+eksctl utils associate-iam-oidc-provider --region us-east-1 --cluster vamsi --approve
 
 ## Create an EC2 key pair Or take existing key pair (myweb9999)
 
