@@ -7,7 +7,7 @@ eksctl version
 
 ##  Create an EKS cluster with empty node group
 
-eksctl create cluster --name=vamsi --region=us-east-1 --version 1.27 --zones=us-east-1a,us-east-1b --without-nodegroup 
+eksctl create cluster --name=vamsi --region=us-east-1 --version 1.24 --zones=us-east-1a,us-east-1b --without-nodegroup 
 
 ## Create & Associate IAM OIDC Provider for our EKS Cluster
 To enable and use AWS IAM roles for Kubernetes service accounts on our EKS cluster, we must create & associate OIDC identity provider.
