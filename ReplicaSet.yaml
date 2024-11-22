@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
-  name: taxi-booking
+  name: train-ticket-reservation
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
-      app: myapp
+      app: vamsi
   template:
     metadata:
       labels:
-        app: myapp
+        app: vamsi
     spec:
       containers:
-        - name: myapp
+        - name: vamsi
           image: nginx
           ports:
             - containerPort: 80  
